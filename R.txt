@@ -1,0 +1,37 @@
+Q1=> Explain redux to a 5 year old (ELI5) ?
+Ans=> Redux is like a store that you can use anyhwere you want and you can also store stuff there.
+
+Q2=> What is immutability?
+Ans=> Immutability means not capable of or susceptible to change.
+
+Q3=> What does Object.freeze() do?
+Ans=> A frozen object can no longer be changed; freezing an object prevents new properties from being added
+        to it, existing properties from being removed, prevents changing the enumerability, configurability, 
+        or writability of existing properties, and prevents the values of existing properties from being changed.
+
+Q4=> Why is immutability required by Redux?
+Ans=> Immutability of redux state is necessary since it allows detecting redux state changes in an efficient manner.
+
+Q5=> How does Redux use shallow equality checking? 
+Ans=>1. creates a reference to the current state slice referred to by each key;
+     2. calls the appropriate reducer and passes it the slice;
+     3. creates a reference to the possibly-mutated state slice that's returned by the reducer.
+
+Q6=> How well does Redux “scale” in terms of performance and architecture?
+Ans=> React Redux in particular is heavily optimized to cut down on unnecessary re-renders, and React-Redux v5 shows 
+      noticeable improvements over earlier versions. Redux may not be as efficient out of the box when compared to other libraries.
+
+Q7=> How does Redux compare to the React Context API?
+Ans=> Both are excellent tools for their own specific niche, Redux is overkill just to pass data from parent to child & Context API truly shines in this case. 
+
+Q8=> What is webpack ?
+Ans=> webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling
+
+Q9=> What is treeshaking ?
+Ans=>  Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.
+
+Q10=> What are some features of using webpack?
+Ans=> 1. Entry. Webpack creates a graph of all of your application's dependencies. ...
+      2. Output. Once you've bundled all of your assets together, we still need to tell Webpack where to bundle our application. ...
+      3. Loaders. ...
+      4.Plugins.
